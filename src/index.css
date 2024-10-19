@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{ 
+  background-color: #06111B;
+  background-image:
+   linear-gradient(rgba(255, 255, 255, 0.05) 1px,transparent 1px),
+  linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px,transparent 1px);
+  background-size: 90px 90px;
+  font-family:monospace;
+ 
+}
+
+ body.dark{
+  background-color: #ece7e7;
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 0, 0, 0.06) 1px, transparent 1px);
+  background-size: 90px 90px;
+  
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-15px); }
+}
+
+.rotateCard:hover{
+  transform: rotateY(180deg);
+  background-color: red;
+}
+
+.mask-gradient {
+   mask-image: linear-gradient(
+    to right,
+    hsla(200, 100%, 50%, 0),  /* Transparent blue (start) */
+    rgb(0, 170, 255) 10%, /* Solid blue (start) */
+    hsla(200, 100%, 50%, 1) 90%, /* Solid blue (end) */
+    hsla(200, 100%, 50%, 0)    /* Transparent blue (end) */
+  );
+ 
+}
+@layer base {
+  ::selection {
+    background-color: #F4C2C2; /* Baby pink background color */
+    color: #333333;           /* Text color for the selected text */
+  }
+
+  /* For WebKit-based browsers */
+  ::-webkit-selection {
+    background-color: #F4C2C2; /* Baby pink background color */
+    color: #000000;           /* Text color for the selected text */
+  }
+}
