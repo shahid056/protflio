@@ -4,7 +4,7 @@ import { PiArrowBendLeftDownFill } from "react-icons/pi";
 
 function About() {
   return (
-    <div className="mt-[15%]">
+    <div className="mt-[15%] px-[9vw]">
       <div className="flex   justify-center items-center  flex-col p-4">
         <div className="flex flex-row">
           <PiArrowBendLeftDownFill className="text-night-text dark:text-day-text mt-[15%] text-2xl  sm:mt-[14%]" />
