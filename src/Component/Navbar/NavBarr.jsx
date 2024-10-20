@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import { MdOutlineWbSunny } from "react-icons/md";
 import { IoMoonOutline } from "react-icons/io5";
-import resuem from "../../assets/Resume.pdf";
+import resuem from "../../assets/resume.pdf";
 
 function NavBarr({ toggleDarkMode, darkMode }) {
   return (
